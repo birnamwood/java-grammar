@@ -1,5 +1,5 @@
 
-public class SumArrays {
+public class UseArrayOperations {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
@@ -7,25 +7,20 @@ public class SumArrays {
 		int[] list2 = {54, 47, 5, 358, 2};
 		int[] list3 = {5, 87, 8, 11, 41};
 
-		int sum1 = 0;
-		int sum2 = 0;
-		int sum3 = 0;
+		ArrayOperations arrayOpe = new ArrayOperations();
 
-		for(int i : list1) {
-			sum1 += i;
-		}
-
-		for(int i : list2) {
-			sum2 += i;
-		}
-
-		for(int i : list3) {
-			sum3 += i;
-		}
+		int sum1 = arrayOpe.getSumArray(list1);
+		int sum2 = arrayOpe.getSumArray(list2);
+		int sum3 = arrayOpe.getSumArray(list3);
 
 		System.out.println("配列1内の合計：" + sum1);
 		System.out.println("配列2内の合計：" + sum2);
 		System.out.println("配列3内の合計：" + sum3);
+
+		int total = sum1 + sum2 + sum3;
+		System.out.println("全配列の合計：" + total);
+
+
 
 	}
 
